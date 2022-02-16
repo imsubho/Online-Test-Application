@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand ml-2 fw-bolder" routerLink="/quiz">Online Quiz</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarNav"
+    aria-controls="navbarNav"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item">
+        <a
+          class="nav-link btn-outline-primary btn-sm text-light fw-bolder"
+          routerLink="/quiz"
+          >Home</a
+        >
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+
+<footer class="bg-dark text-center text-lg-start mt-5">
+  <!-- Copyright -->
+  <div class="text-center p-3 text-light fw-bold">
+    © 2021 Copyright:
+    <a class="text-light fw-bold" routerLink="/quiz">Online Quiz Application</a>
+  </div>
+  <!-- Copyright -->
+</footer>

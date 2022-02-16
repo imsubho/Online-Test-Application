@@ -1,0 +1,27 @@
+<div class="container mt-5">
+  <div class="row">
+    <div *ngFor="let tempQuiz of quizes" class="col-md-4">
+      <div class="card">
+        <img
+          src="{{ tempQuiz.imageUrl }}"
+          class="card-img-top"
+          alt="Quiz Image"
+        />
+        <div class="card-body text-center">
+          <h5 class="card-title">
+            {{ tempQuiz.name }}
+          </h5>
+          <hr />
+          <p class="card-text">
+            {{ tempQuiz.description }}
+          </p>
+          <a
+            routerLink="/quiz/{{ tempQuiz.name }}"
+            class="btn btn-outline-primary"
+            >Give {{ tempQuiz.name }} Quiz</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
